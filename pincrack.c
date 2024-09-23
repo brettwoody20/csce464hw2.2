@@ -26,7 +26,72 @@ int OpenConnection(const char *hostname, int port);
 void ShowCerts(SSL* ssl);
 SSL_CTX* InitCTX(void);
 
+
 int pincrack(char *hash, int hashLength) {
+    char hostname[NETDB_MAX_HOST_NAME_LENGTH];
+    char buf[BUFFER_LENGTH];
+    SSL_CTX *ctx;
+    SSL *ssl;
+    int server;
+    int bytes;
+
+    // Init. the SSL lib
+    SSL_library_init();
+    ctx = InitCTX();
+
+    printf("Client SSL lib init complete\n");
+
+    // Open the connection as normal
+    strcpy(hostname, SERVER_NAME);
+    server = OpenConnection(hostname, SERVER_PORT);
+
+    // Create new SSL connection state
+    ssl = SSL_new(ctx);
+
+
+    // Attach the socket descriptor
+    SSL_set_fd(ssl, server);
+
+    // Perform the connection
+    if ( SSL_connect(ssl) != FAIL ) {
+
+        printf("Connected with %s encryption\n", SSL_get_cipher(ssl));
+
+        // Print any certs
+        ShowCerts(ssl);
+
+
+        // Encrypt & send message */
+        SSL_write(ssl, hash, hashLength);
+
+
+        // Get reply & decrypt
+        bytes = SSL_read(ssl, buf, sizeof(buf));
+
+
+        buf[bytes] = 0;
+        printf("\nReceived: %s\n\n", buf);
+
+
+        // Release connection state
+        SSL_free(ssl);
+
+
+    } // if
+
+    else ERR_print_errors_fp(stderr);
+
+
+    // Close socket
+    close(server);
+
+
+    // Release context
+    SSL_CTX_free(ctx);
+    return 0;
+}
+
+int pincrack_old(char *hash, int hashLength) {
 
 /* Here you will implement all logic: 
 socket creation, communication with the server and returning 
