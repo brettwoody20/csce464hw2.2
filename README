@@ -11,7 +11,7 @@ Server Compilation:
     gcc -w -o server server.c -lcrypto -lssl
     
 Dynamic Library Compilation:
-    gcc -shared -fpic -o libpincrack.so pincrack.c -lcrypto -lssl
+    gcc -shared -fpic -o libpincrack.so pincrack.c
     #compile pincracktest
     export LD_LIBRARY_PATH=.
     #then run code
