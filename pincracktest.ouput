@@ -1,0 +1,126 @@
+1725506788.300223 execve("./pincracktest", ["./pincracktest", "afc97ea131fd7e2695a98ef34013608f"...], 0x7ffea05bee90 /* 35 vars */) = 0
+1725506788.304676 brk(NULL)             = 0x555900f49000
+1725506788.305292 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd4df64c00) = -1 EINVAL (Invalid argument)
+1725506788.305908 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f0c0d519000
+1725506788.306485 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+1725506788.306982 openat(AT_FDCWD, "./glibc-hwcaps/x86-64-v4/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.307797 openat(AT_FDCWD, "./glibc-hwcaps/x86-64-v3/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.308853 openat(AT_FDCWD, "./glibc-hwcaps/x86-64-v2/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.309648 openat(AT_FDCWD, "./tls/haswell/avx512_1/x86_64/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.310479 openat(AT_FDCWD, "./tls/haswell/avx512_1/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.311240 openat(AT_FDCWD, "./tls/haswell/x86_64/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.311892 openat(AT_FDCWD, "./tls/haswell/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.312475 openat(AT_FDCWD, "./tls/avx512_1/x86_64/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.313084 openat(AT_FDCWD, "./tls/avx512_1/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.313833 openat(AT_FDCWD, "./tls/x86_64/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.314445 openat(AT_FDCWD, "./tls/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.315074 openat(AT_FDCWD, "./haswell/avx512_1/x86_64/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.315793 openat(AT_FDCWD, "./haswell/avx512_1/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.316457 openat(AT_FDCWD, "./haswell/x86_64/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.317101 openat(AT_FDCWD, "./haswell/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.317830 openat(AT_FDCWD, "./avx512_1/x86_64/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.318453 openat(AT_FDCWD, "./avx512_1/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.319052 openat(AT_FDCWD, "./x86_64/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.319626 openat(AT_FDCWD, "./libpincrack.so", O_RDONLY|O_CLOEXEC) = 3
+1725506788.320759 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+1725506788.321450 newfstatat(3, "", {st_mode=S_IFREG|0777, st_size=16192, ...}, AT_EMPTY_PATH) = 0
+1725506788.322147 getcwd("/mnt/c/Users/brett/OneDrive/Desktop/tamu_24_25/csce_464/HW1 Code", 128) = 65
+1725506788.322653 mmap(NULL, 16528, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f0c0d514000
+1725506788.323131 mmap(0x7f0c0d515000, 4096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f0c0d515000
+1725506788.323562 mmap(0x7f0c0d516000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f0c0d516000
+1725506788.323975 mmap(0x7f0c0d517000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f0c0d517000
+1725506788.325024 close(3)              = 0
+1725506788.325569 openat(AT_FDCWD, "./glibc-hwcaps/x86-64-v4/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.326173 openat(AT_FDCWD, "./glibc-hwcaps/x86-64-v3/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.326753 openat(AT_FDCWD, "./glibc-hwcaps/x86-64-v2/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.327327 openat(AT_FDCWD, "./tls/haswell/avx512_1/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.327891 openat(AT_FDCWD, "./tls/haswell/avx512_1/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.328511 openat(AT_FDCWD, "./tls/haswell/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.329240 openat(AT_FDCWD, "./tls/haswell/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.329810 openat(AT_FDCWD, "./tls/avx512_1/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.330402 openat(AT_FDCWD, "./tls/avx512_1/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.330970 openat(AT_FDCWD, "./tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.331530 openat(AT_FDCWD, "./tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.332212 openat(AT_FDCWD, "./haswell/avx512_1/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.332777 openat(AT_FDCWD, "./haswell/avx512_1/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.333335 openat(AT_FDCWD, "./haswell/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.333909 openat(AT_FDCWD, "./haswell/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.334485 openat(AT_FDCWD, "./avx512_1/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.335057 openat(AT_FDCWD, "./avx512_1/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.335745 openat(AT_FDCWD, "./x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.336300 openat(AT_FDCWD, "./libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+1725506788.336863 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+1725506788.337445 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=28427, ...}, AT_EMPTY_PATH) = 0
+1725506788.337899 mmap(NULL, 28427, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f0c0d50d000
+1725506788.338525 close(3)              = 0
+1725506788.339236 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+1725506788.339892 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+1725506788.340477 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+1725506788.340943 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+1725506788.341422 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0i8\235HZ\227\223\333\350s\360\352,\223\340."..., 68, 896) = 68
+1725506788.341856 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=2216304, ...}, AT_EMPTY_PATH) = 0
+1725506788.342279 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+1725506788.342695 mmap(NULL, 2260560, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f0c0d2e5000
+1725506788.343108 mmap(0x7f0c0d30d000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f0c0d30d000
+1725506788.343627 mmap(0x7f0c0d4a2000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7f0c0d4a2000
+1725506788.344165 mmap(0x7f0c0d4fa000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x214000) = 0x7f0c0d4fa000
+1725506788.344790 mmap(0x7f0c0d500000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f0c0d500000
+1725506788.345233 close(3)              = 0
+1725506788.345644 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f0c0d2e2000
+1725506788.346074 arch_prctl(ARCH_SET_FS, 0x7f0c0d2e2740) = 0
+1725506788.346486 set_tid_address(0x7f0c0d2e2a10) = 6397
+1725506788.346895 set_robust_list(0x7f0c0d2e2a20, 24) = 0
+1725506788.347297 rseq(0x7f0c0d2e30e0, 0x20, 0, 0x53053053) = 0
+1725506788.347887 mprotect(0x7f0c0d4fa000, 16384, PROT_READ) = 0
+1725506788.348359 mprotect(0x7f0c0d517000, 4096, PROT_READ) = 0
+1725506788.348789 mprotect(0x555900c45000, 4096, PROT_READ) = 0
+1725506788.349206 mprotect(0x7f0c0d553000, 8192, PROT_READ) = 0
+1725506788.349637 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+1725506788.350055 munmap(0x7f0c0d50d000, 28427) = 0
+1725506788.350487 socket(AF_INET, SOCK_STREAM, IPPROTO_IP) = 3
+1725506788.350927 getrandom("\x16\x6a\x31\x32\xd2\xd0\xf9\x58", 8, GRND_NONBLOCK) = 8
+1725506788.351340 brk(NULL)             = 0x555900f49000
+1725506788.351886 brk(0x555900f6a000)   = 0x555900f6a000
+1725506788.352296 newfstatat(AT_FDCWD, "/etc/resolv.conf", {st_mode=S_IFREG|0644, st_size=197, ...}, 0) = 0
+1725506788.352742 openat(AT_FDCWD, "/etc/host.conf", O_RDONLY|O_CLOEXEC) = 4
+1725506788.353197 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=92, ...}, AT_EMPTY_PATH) = 0
+1725506788.353803 read(4, "# The \"order\" line is only used "..., 4096) = 92
+1725506788.354286 read(4, "", 4096)     = 0
+1725506788.354960 close(4)              = 0
+1725506788.355491 futex(0x7f0c0d50732c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+1725506788.356229 openat(AT_FDCWD, "/etc/resolv.conf", O_RDONLY|O_CLOEXEC) = 4
+1725506788.356763 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=197, ...}, AT_EMPTY_PATH) = 0
+1725506788.357208 read(4, "# This file was automatically ge"..., 4096) = 197
+1725506788.357696 read(4, "", 4096)     = 0
+1725506788.358162 uname({sysname="Linux", nodename="DESKTOP-H51O42T", ...}) = 0
+1725506788.358633 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=197, ...}, AT_EMPTY_PATH) = 0
+1725506788.359172 close(4)              = 0
+1725506788.360947 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+1725506788.361474 connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+1725506788.362127 close(4)              = 0
+1725506788.362596 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+1725506788.363084 connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+1725506788.363529 close(4)              = 0
+1725506788.363985 newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+1725506788.364521 newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+1725506788.365035 openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 4
+1725506788.365523 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=510, ...}, AT_EMPTY_PATH) = 0
+1725506788.366078 read(4, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 510
+1725506788.366633 read(4, "", 4096)     = 0
+1725506788.367180 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=510, ...}, AT_EMPTY_PATH) = 0
+1725506788.367728 close(4)              = 0
+1725506788.368368 openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 4
+1725506788.368874 newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=427, ...}, AT_EMPTY_PATH) = 0
+1725506788.369387 lseek(4, 0, SEEK_SET) = 0
+1725506788.369906 read(4, "# This file was automatically ge"..., 4096) = 427
+1725506788.370416 read(4, "", 4096)     = 0
+1725506788.371139 close(4)              = 0
+1725506788.371610 connect(3, {sa_family=AF_INET, sin_port=htons(3005), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+1725506788.372209 sendto(3, "afc97ea131fd7e2695a98ef34013608f"..., 250, 0, NULL, 0) = 250
+1725506788.372989 recvfrom(3, "PIN found: 999\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 249, 0, NULL, NULL) = 249
+1725506788.374384 newfstatat(1, "", {st_mode=S_IFREG|0777, st_size=11833, ...}, AT_EMPTY_PATH) = 0
+1725506788.375255 close(3)              = 0
+1725506788.375807 write(1, "PIN found: 999\n", 15PIN found: 999
+) = 15
+1725506788.376583 exit_group(0)         = ?
+1725506788.378124 +++ exited with 0 +++

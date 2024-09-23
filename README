@@ -1,0 +1,25 @@
+Ran on Ubuntu Version 22.04.1 LTS (on WSL)
+
+Compilation instructions (openssl):
+    
+Installed openssl:
+    sudo apt update
+    sudo apt install libssl-dev
+    check: ls /usr/include/openssl
+    
+Server Compilation:
+    gcc -w -o server server.c -lcrypto -lssl
+    
+Dynamic Library Compilation:
+    gcc -shared -fpic -o libpincrack.so pincrack.c -lcrypto -lssl
+    #compile pincracktest
+    export LD_LIBRARY_PATH=.
+    #then run code
+
+Pincracktest Compilation
+    gcc -L. -o pincracktest pincracktest.c -lpincrack -lcrypto -lssl
+    
+Used Hash: afc97ea131fd7e2695a98ef34013608f97f34e1d
+Pin: 999
+    
+    
